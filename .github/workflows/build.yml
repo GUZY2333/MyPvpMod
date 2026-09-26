@@ -19,8 +19,8 @@ jobs:
 
       - name: Build with Xmake
         run: |
-          xmake f -p android -a arm64-v8a -m release
-          xmake
+          xmake f -p android -a arm64-v8a -m release -y
+          xmake -y
 
       - name: Upload .so
         uses: actions/upload-artifact@v4
